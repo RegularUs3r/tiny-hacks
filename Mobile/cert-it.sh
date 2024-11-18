@@ -1,0 +1,8 @@
+su -c 'mkdir -m 700 /data/holdit'
+su -c 'cp /system/etc/security/cacerts/* /data/holdit'
+su -c 'mount -t tmpfs tmpfs /system/etc/security/cacerts'
+su -c 'mv /data/holdit/* /system/etc/security/cacerts/'
+su -c 'cp /sdcard/9a5ba575.0 /system/etc/security/cacerts/'
+su -c 'chown root:root /system/etc/security/cacerts/*'
+su -c 'chmod 644 /system/etc/security/cacerts/*'
+su -c 'chcon u:object_r:system_file:s0 /system/etc/security/cacerts/*'
