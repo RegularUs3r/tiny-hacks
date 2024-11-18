@@ -1,0 +1,1 @@
+I usually put here, some hacks/tools/scripts I built or put together in order to help me while pentesting or bug hunting 
