@@ -1,4 +1,4 @@
-## Resumed history why I've come up with this
+## Resumed story why I've come up with this
 
     Once using LDPlayer couldn't really root it (i.e adb root) in order to add BurpSuite certificate as system. I scavenged the internet for a solution.
     I found what's in `cert-it.sh`.
