@@ -1,3 +1,4 @@
+//Intended to use with duckduckgo
 function selfloop(i, tosearch) {
      dorking = []
      var x = 1;
@@ -27,6 +28,3 @@ function selfloop(i, tosearch) {
      }
      loop()
 }selfloop(50)
-
-
-dorking.map(links => { if (links.includes("contaselect")) { console.log(links) } })
