@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        .parent {
+            height: 200px;
+            width: 200px;
+            background-color: black;
+            color: white;
+        }
+        .child {
+            height: inherit;
+            width: inherit;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            opacity: 0;
+        }
+        @keyframes fade {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+        .child:hover {
+            animation: fade 3s;
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+    <h3>
+        Fading Text Animation Effect Using CSS3
+    </h3>
+    <p>
+        Hover over the box to see the <strong>
+        fade-in</strong> animation.
+    </p>
+    <div class="parent">
+        <div class="child">
+            Dream big, achieve bigger
+        </div>
+    </div>
+</body>
+</html>
