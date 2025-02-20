@@ -45,6 +45,9 @@ I usually put here, some hacks/tools/scripts I built or put together in order to
     Fetch any that starts with
     jq ' .[] | select(. | startswith("<string>"))'
 
+    Extract usefull information from wappalyzer output
+    jq ' .technologies | "\(.categories[].name) \(.name) \(.confidence)"'
+
 ##### grep section
     extract lines with N digits
     grep -E "[0-9]{4}"
